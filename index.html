@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>todo SPA</title>
+    <style >
+    body .title {
+        display: flex;
+        justify-content: center;
+        background: #ddd;
+
+    }
+
+    #create {
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+	  .Finished {
+		text-decoration:line-through
+	  }
+      #showlist {
+          width: 400px;
+          height:400px;
+          margin-left: 36%;
+          border:1px solid blue;
+          background: #eee;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+      }
+      .hide{
+        display: none;
+      }
+      #tododetail {
+          width: 400px;
+          height:400px;
+          margin-left: 36%;
+          border:1px solid blue;
+          background: #eee;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <button class='button-class create'>显示创建todo页面</button>
+      <button  class='button-class showlist'>显示todoList页面</button>
+      <!-- <button  class='button-class edittodo'>显示编辑todo页面</button> -->
+	  <button  class='button-class tododetail'>显示todo详情页面</button>
+    </div>
+    <div class="button-class-todo create " id='create'>
+      <input type="text" class="class-input-new" value="">
+        <button class='button-class-add add'>创建</button>
+    </div>
+    <div class="button-class-todo showlist" id='showlist'>
+
+    </div>
+	 <!-- <div class="button-class-todo edittodo" id='edittodo'>
+
+    </div> -->
+	 <div class="button-class-todo tododetail" id='tododetail'>
+
+    </div>
+    <script src=index.js></script>
+  </body>
+</html>
